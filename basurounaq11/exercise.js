@@ -4,7 +4,7 @@ exercise.min = function(unordered) {
     var min;
 
     // Find the minimum value in an array
-    min = unordered.sort()[0];
+    min = unordered.sort(function(a,b){return a-b})[0];
 
     return min;
 };
